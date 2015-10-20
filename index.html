@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Calculator</title>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <link rel = 'stylesheet' href = 'stylesheet.css'>
+      <script src = 'script.js'></script>
+  </head>
+  <body>
+    <div class = 'calculator'>
+      <p id = 'title'>FreeCodeCamp</p>
+      <p id = 'subtitle'>Electronic calculator</p>
+      <form name = 'case'>
+      <input type = 'text' name = 'display' id = 'display' value = ''>
+    <div class = 'row'>
+     <!-- <button class = 'ctrl'>AC</button>-->
+      <input type = 'button' value = 'AC' onclick = 'runAC()' class ='ctrl'>
+      
+      <!--<button class = 'ctrl' id = 'clearMem' class = 'oper' value = 'CE' onclick = 'runC()'>CE</button>-->
+      <input type = 'button' value = 'CE' onclick = 'runC()' class ='ctrl'>
+      <!--<button>%</button>-->
+      <input type = 'button' value = '%' onclick = 'runM()' class ='ctrl'>
+      
+      <!--<button id = 'divide' onclick = 'runDivide()'>/</button>-->
+      <input type = 'button' value = '/' onclick = 'runDivide()' class ='digit'>
+    </div>
+    <div class = 'row'>
+      <!--<button onclick = 'run7()'>7</button>-->
+      <input type = 'button' value = '7' onclick = 'run7()' class ='digit'>
+      <!--<button onclick = 'run8()'>8</button>-->
+      <input type = 'button' value = '8' onclick = 'run8()' class ='digit'>
+      <!--<button onclick = 'run9()'>9</button>-->
+      <input type = 'button' value = '9' onclick = 'run9()' class ='digit'>
+      <!--<button onclick = 'runMultiply()'>*</button>-->
+      <input type = 'button' value = '*' onclick = 'runMultiply()' class ='digit'>
+    </div>
+    <div class = 'row'>
+      <!--<button onclick = 'run4()'>4</button>-->
+      <input type = 'button' value = '4' onclick = 'run4()' class ='digit'>
+      <!--<button onclick = 'run5()'>5</button>-->
+      <input type = 'button' value = '5' onclick = 'run5()' class ='digit'>
+      <!--<button onclick = 'run6()'>6</button>-->
+      <input type = 'button' value = '6' onclick = 'run6()' class ='digit'>
+      <!--<button onclick = 'runMinus'>-</button>-->
+      <input type = 'button' value = '-' onclick = 'runMinus()' class ='digit'>
+    </div>
+    <div class = 'row'>
+      <!--<button onclick = 'run1()'>1</button>-->
+      <input type = 'button' value = '1' onclick = 'run1()' class = 'digit'>
+      
+      <!--<button onclick = 'run2()'>2</button>-->
+      <input type = 'button' value = '2' onclick = 'run2()' class = 'digit'>
+      <!--<button onclick = 'run3()'>3</button>-->
+      <input type = 'button' value = '3' onclick = 'run3()' class = 'digit'>
+      
+      <!--<button class = 'tall' onclick = 'runPlus()'>+</button>-->
+      <input type = 'button' value = '+' onclick = 'runPlus()' class = 'digit'>
+    </div>
+    <div class = 'row'>
+      <!--<button onclick = 'run0()'>0</button>-->
+      <input type = 'button' value = '0' onclick = 'run0()' class ='digit'> 
+      <!--<button onclick = 'runPoint()'>.</button>-->
+      <input type = 'button' value = '.' onclick = 'runPoint()' class ='digit'> 
+      <!--<button onclick = 'runEqual()'>=</button>-->
+      <input type = 'button' value = '=' onclick = 'runEqual()' class ='digit'>
+    </div>
+    
+    </div>
+  </body>
+</html>
